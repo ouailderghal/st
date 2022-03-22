@@ -31,6 +31,7 @@ st: $(OBJ)
 
 clean:
 	rm -f st $(OBJ) st-$(VERSION).tar.gz
+	git clean -X -f
 
 dist: clean
 	mkdir -p st-$(VERSION)
